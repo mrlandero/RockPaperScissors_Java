@@ -96,3 +96,15 @@ Write a function that compares the choices and returns the result:
     
       }
 ```
+
+## Step 8:
+
+Write a function that prints your choice, the computer's, and the result:
+
+```java
+    public static void printResult(String yourChoice, String computerChoice, String result) {
+        System.out.println("You chose: " + yourChoice);
+        System.out.println("The computer chose: " + computerChoice);
+        System.out.println(result);
+    }
+```
