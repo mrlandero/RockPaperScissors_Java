@@ -19,3 +19,11 @@ public class RockPaperScissors {
     public static void main(String[] args) {
 }
 ```
+
+## Step 3:
+
+Instantiate the **Scanner** instance:
+
+```java
+Scanner scan = new Scanner(System.in);
+```
