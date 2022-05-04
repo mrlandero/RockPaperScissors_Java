@@ -78,3 +78,21 @@ public static String computerChoice() {
             default: return "Not valid choice";
         }
 ```
+
+## Step 7:
+
+Write a function that compares the choices and returns the result:
+
+```java
+    public static String result(String yourChoice, String computerChoice) {
+        
+        if (yourChoice.equals("rock") && computerChoice.equals("scissors") || yourChoice.equals("paper") && computerChoice.equals("rock") || yourChoice.equals("scissors") && computerChoice.equals("paper")){
+            return "You win!";
+        } else if (yourChoice.equals(computerChoice)){
+            return "It's a tie!";
+        } else {
+            return "You lose!";
+        }
+    
+      }
+```
