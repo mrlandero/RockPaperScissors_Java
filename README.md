@@ -9,3 +9,13 @@ Import the **Scanner** utility:
 ```java
 import java.util.Scanner;
 ```
+
+## Step 2:
+
+Create the RockPaperScissors class:
+
+```java
+public class RockPaperScissors {
+    public static void main(String[] args) {
+}
+```
