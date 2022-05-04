@@ -63,3 +63,18 @@ If user selects "yes", then we continue to ask them to pick bwtween rock, paper,
             System.out.println("Ok! Some other time. Bye");
         }
 ```
+
+## Step 6:
+
+Create the computerChoice() function:
+
+```java
+public static String computerChoice() {
+        double computerChoice = Math.random() * 3;
+        switch((int)computerChoice) {
+            case 0: return "rock";
+            case 1: return "paper";
+            case 2: return "scissors";
+            default: return "Not valid choice";
+        }
+```
