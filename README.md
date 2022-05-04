@@ -108,3 +108,11 @@ Write a function that prints your choice, the computer's, and the result:
         System.out.println(result);
     }
 ```
+
+## Step 9:
+
+Close the **Scanner** instance to avoid data leaks:
+
+```java
+scan.close();
+```
