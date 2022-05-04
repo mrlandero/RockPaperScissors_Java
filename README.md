@@ -27,3 +27,16 @@ Instantiate the **Scanner** instance:
 ```java
 Scanner scan = new Scanner(System.in);
 ```
+
+## Step 4:
+
+Introduce the game | Ask user if they would like to play and wait for their input:
+
+```java
+        System.out.println("Let's play Rock Paper Scissors.");
+        System.out.println("When I say 'shoot', Choose: rock, paper, or scissors.\n");
+        System.out.println("Are you ready? Write 'yes' if you are.");
+
+    //Task 1: See if the user wants to play. 
+        String ready = scan.nextLine(); 
+```
