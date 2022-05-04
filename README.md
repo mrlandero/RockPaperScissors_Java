@@ -40,3 +40,26 @@ Introduce the game | Ask user if they would like to play and wait for their inpu
     //Task 1: See if the user wants to play. 
         String ready = scan.nextLine(); 
 ```
+
+## Step 5:
+
+If user selects "yes", then we continue to ask them to pick bwtween rock, paper, or scissors | We will also use the computerChoice() function to randomly pick one of the same values | We will use the printResult() function to display whether the user wins or loses | If the user selects "no, then we will display a good-bye message:
+
+```java
+        if (ready.equals("yes")) {
+            System.out.println("Great!");
+            System.out.println("Choose between -rock -paper or -scissors");
+            String yourChoice = scan.nextLine();
+            if (yourChoice.equals("rock") || yourChoice.equals("paper") || yourChoice.equals("scissors")) {
+                String computerChoice = computerChoice();
+                printResult(yourChoice, computerChoice, result(yourChoice, computerChoice));
+            } else {
+                System.out.println("Please enter a valid option next time. Shutting game down. Goodbye!");
+            }
+            
+            // System.out.println("Your choice is: " + yourChoice + ". The computer's choice is: " + computerChoice);
+            // System.out.println(result(yourChoice, computerChoice));
+        } else {
+            System.out.println("Ok! Some other time. Bye");
+        }
+```
